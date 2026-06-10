@@ -1,0 +1,30 @@
+<div class="container">
+
+    <h1>Parent Component</h1>
+
+    <div class="button-group">
+
+        <button class="change-btn"
+                (click)="changeInput()">
+            Change Input
+        </button>
+
+        <button class="toggle-btn"
+                (click)="toggleChild()">
+            Toggle Child
+        </button>
+
+    </div>
+
+    <div class="counter-box">
+        Current Counter Value : {{ counter }}
+    </div>
+
+    <hr>
+
+    <app-lifecycle-logger
+        *ngIf="showChild"
+        [data]="counter">
+    </app-lifecycle-logger>
+
+</div>

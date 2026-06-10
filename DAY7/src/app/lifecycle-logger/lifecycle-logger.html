@@ -1,0 +1,20 @@
+<div class="container">
+
+    <h1>Lifecycle Logger Component</h1>
+
+    <div class="input-box">
+        <h3>Input Value</h3>
+        <p>{{ data }}</p>
+    </div>
+
+    <div class="logs-box">
+        <h3>Hook Execution Order</h3>
+
+        <ul>
+            <li *ngFor="let log of logs">
+                {{ log }}
+            </li>
+        </ul>
+    </div>
+
+</div>

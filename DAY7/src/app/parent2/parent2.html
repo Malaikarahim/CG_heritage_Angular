@@ -1,0 +1,23 @@
+<div class="container">
+
+    <h1>Parent Component</h1>
+
+    <div class="buttons">
+
+        <button class="inc-btn"
+                (click)="increment()">
+            Increment
+        </button>
+
+        <button class="dec-btn"
+                (click)="decrement()">
+            Decrement
+        </button>
+
+    </div>
+
+    <h2>Counter Value : {{count}}</h2>
+
+    <app-child [counter]="count"></app-child>
+
+</div>

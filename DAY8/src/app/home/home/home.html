@@ -1,0 +1,34 @@
+<h1>Shared Module Demo</h1>
+
+<app-button variant="primary"></app-button>
+
+<br><br>
+
+<app-badge
+  label="NEW"
+  color="green">
+</app-badge>
+
+<hr>
+
+<app-spinner></app-spinner>
+
+<hr>
+
+<h2 appHighlight color="pink">
+  Hover over me
+</h2>
+
+<p appTruncateText [maxChars]="20">
+Angular SharedModule with Components Directives and Pipes Example
+</p>
+
+<hr>
+
+<p>
+{{ 'Angular Shared Module Pipe Example' | truncate:15 }}
+</p>
+
+<p>
+{{ 125000 | rupee }}
+</p>

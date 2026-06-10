@@ -1,0 +1,18 @@
+button{
+    padding:10px 20px;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+.primary{
+    background-color:blue;
+}
+
+.secondary{
+    background-color:gray;
+}
+
+.danger{
+    background-color:red;
+}
