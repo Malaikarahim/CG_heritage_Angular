@@ -1,0 +1,41 @@
+<div class="container">
+
+  <h1>{{ envService.env.appName }}</h1>
+
+  <div
+    class="badge"
+    [ngClass]="{
+      'dev': !envService.env.production && envService.env.appVersion==='1.0.0',
+      'staging': envService.env.appVersion==='1.0.0-STAGING',
+      'prod': envService.env.production
+    }">
+
+    {{
+      envService.env.production
+      ? 'PRODUCTION'
+      : (envService.env.appVersion==='1.0.0-STAGING'
+      ? 'STAGING'
+      : 'DEVELOPMENT')
+    }}
+
+  </div>
+
+  <h3>API URL</h3>
+  <p>{{ envService.env.apiUrl }}</p>
+
+  <h3>Version</h3>
+  <p>{{ envService.env.appVersion }}</p>
+
+  <h3>Feature Flags</h3>
+
+  <div class="feature">
+    Dark Mode:
+    <span>{{ envService.isFeatureEnabled('enableDarkMode') }}</span>
+  </div>
+
+  <div class="feature">
+    Analytics:
+    <span>{{ envService.isFeatureEnabled('enableAnalytics') }}</span>
+  </div>
+
+</div>
