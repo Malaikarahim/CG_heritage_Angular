@@ -1,0 +1,16 @@
+nav{
+    background-color:#333;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+    padding:10px;
+}
+
+.active{
+    background-color:orange;
+    border-radius:5px;
+}
