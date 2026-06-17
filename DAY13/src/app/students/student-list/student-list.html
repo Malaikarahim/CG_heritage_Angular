@@ -1,0 +1,24 @@
+<h1>Student List</h1>
+
+<div class="student-container">
+
+  @for(student of students; track student.name){
+
+  <div class="student-card">
+
+    <h2>{{student.name}}</h2>
+
+    <p>Email : {{student.email}}</p>
+
+    <p>Phone : {{student.phone}}</p>
+
+    <button
+    [routerLink]="['/students', student.name]">
+      View Details
+    </button>
+
+  </div>
+
+  }
+
+</div>

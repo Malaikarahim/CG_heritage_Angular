@@ -1,0 +1,44 @@
+.student-container{
+    width:90%;
+    margin:auto;
+}
+
+.student-container h1{
+    text-align:center;
+    color:white;
+    margin-top:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    color:#222;
+    margin-bottom:20px;
+}
+
+.card a{
+    text-decoration:none;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    padding:12px 25px;
+    border-radius:20px;
+    display:inline-block;
+}

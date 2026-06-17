@@ -1,0 +1,23 @@
+<h1>Student Details</h1>
+
+<div *ngIf="student">
+
+  <h2>{{student.name}}</h2>
+
+  <p>
+    <strong>Email :</strong>
+    {{student.email}}
+  </p>
+
+  <p>
+    <strong>Phone :</strong>
+    {{student.phone}}
+  </p>
+
+</div>
+
+<div *ngIf="!student">
+
+  <h2>Student Not Found</h2>
+
+</div>

@@ -1,0 +1,25 @@
+.notfound{
+
+    text-align:center;
+
+    margin-top:150px;
+
+    color:white;
+
+}
+
+.notfound h1{
+
+    font-size:180px;
+
+    color:#ff0080;
+
+    text-shadow:0 0 40px #ff0080;
+
+}
+
+.notfound h2{
+
+    font-size:40px;
+
+}

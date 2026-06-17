@@ -1,0 +1,29 @@
+<h1>Profile Form</h1>
+
+<input
+type="text"
+placeholder="Name"
+[(ngModel)]="name"
+(input)="typing()">
+
+<br><br>
+
+<input
+type="email"
+placeholder="Email"
+[(ngModel)]="email"
+(input)="typing()">
+
+<br><br>
+
+<input
+type="text"
+placeholder="Phone"
+[(ngModel)]="phone"
+(input)="typing()">
+
+<br><br>
+
+<button (click)="save()">
+  Submit
+</button>
