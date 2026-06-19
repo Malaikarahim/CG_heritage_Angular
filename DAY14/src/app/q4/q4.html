@@ -1,0 +1,47 @@
+<h2>Q4. markAllAsTouched()</h2>
+
+<form [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()">
+
+<div class="form-group">
+
+<label>Username</label>
+
+<input type="text"
+       formControlName="username">
+
+@if(loginForm.get('username')?.touched &&
+loginForm.get('username')?.errors?.['required']){
+
+<p class="error">
+Username is required
+</p>
+
+}
+
+</div>
+
+
+<div class="form-group">
+
+<label>Password</label>
+
+<input type="password"
+       formControlName="password">
+
+@if(loginForm.get('password')?.touched &&
+loginForm.get('password')?.errors?.['required']){
+
+<p class="error">
+Password is required
+</p>
+
+}
+
+</div>
+
+<button type="submit">
+Login
+</button>
+
+</form>

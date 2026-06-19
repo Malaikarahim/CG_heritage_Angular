@@ -1,0 +1,36 @@
+<h2>Q3. Custom Validator Example</h2>
+
+<form [formGroup]="commentForm"
+      (ngSubmit)="onSubmit()">
+
+<div class="form-group">
+
+<label>Comment</label>
+
+<input type="text"
+       formControlName="comment">
+
+@if(commentForm.get('comment')?.touched &&
+commentForm.get('comment')?.errors?.['required']){
+
+<p class="error">
+Comment is required
+</p>
+
+}
+
+@if(commentForm.get('comment')?.errors?.['hasProfanity']){
+
+<p class="error">
+Profanity detected! Please avoid bad words.
+</p>
+
+}
+
+</div>
+
+<button type="submit">
+Submit
+</button>
+
+</form>
