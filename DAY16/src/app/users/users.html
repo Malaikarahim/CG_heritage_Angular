@@ -1,0 +1,29 @@
+<h2>Users Dashboard</h2>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search User..."
+[(ngModel)]="searchText">
+
+<button (click)="testError()">
+Test Error
+</button>
+
+</div>
+
+<div class="error" *ngIf="errorMessage">
+
+{{errorMessage}}
+
+</div>
+
+<div class="card"
+*ngFor="let user of filteredUsers()">
+
+<h3>{{user.name}}</h3>
+
+<p>{{user.email}}</p>
+
+</div>

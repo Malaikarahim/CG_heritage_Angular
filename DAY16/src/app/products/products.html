@@ -1,0 +1,15 @@
+<h2>Products Dashboard</h2>
+
+<div class="card" *ngFor="let product of products">
+
+    <h3>{{product.name}}</h3>
+
+    <p class="price">
+        ₹ {{product.price}}
+    </p>
+
+    <p>
+        {{product.description}}
+    </p>
+
+</div>
