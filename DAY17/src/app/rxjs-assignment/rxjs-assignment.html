@@ -1,0 +1,73 @@
+<div class="container">
+
+    <h1>DAY17 RxJS Assignment</h1>
+
+    <!-- Assignment 1 -->
+    <div class="card">
+
+        <h2>Assignment 1 : RxJS Fundamentals</h2>
+
+        <p>{{timerMessage}}</p>
+
+        <p>
+            Topics Covered:
+            Observable, Observer, Subscription,
+            of(), from(), interval(), timer()
+        </p>
+
+    </div>
+
+    <!-- Assignment 2 -->
+    <div class="card">
+
+        <h2>Assignment 2 : RxJS Operators</h2>
+
+        <h3>Squared Numbers Greater Than 25</h3>
+
+        <ul>
+            <li *ngFor="let num of squareNumbers">
+                {{num}}
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- switchMap -->
+    <div class="card">
+
+        <h3>switchMap Example</h3>
+
+        <button (click)="fetchPost()">
+            Fetch Post
+        </button>
+
+        <div *ngIf="post">
+
+            <p><b>ID :</b> {{post.id}}</p>
+
+            <p><b>Title :</b> {{post.title}}</p>
+
+            <p><b>Body :</b> {{post.body}}</p>
+
+        </div>
+
+    </div>
+
+    <!-- mergeMap -->
+    <div class="card">
+
+        <h3>mergeMap Example</h3>
+
+        <div *ngFor="let student of students">
+
+            <h4>{{student.name}}</h4>
+
+            <p>{{student.email}}</p>
+
+            <hr>
+
+        </div>
+
+    </div>
+
+</div>
