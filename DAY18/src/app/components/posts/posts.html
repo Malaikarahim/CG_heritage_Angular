@@ -1,0 +1,97 @@
+<div class="container">
+
+    <!-- Header -->
+
+    <header class="hero">
+
+        <h1>🚀 Angular HTTP Interceptor Dashboard</h1>
+
+        <p>
+            Learn Angular concepts while demonstrating Logging and Error HTTP
+            Interceptors using Angular Standalone Components.
+        </p>
+
+    </header>
+
+    <!-- Buttons -->
+
+    <div class="button-section">
+
+        <button class="primary-btn" (click)="loadPosts()">
+
+            📚 Load Angular Topics
+
+        </button>
+
+        <button class="danger-btn" (click)="testError()">
+
+            ⚠ Test Error Interceptor
+
+        </button>
+
+    </div>
+
+    <!-- Assignment Information -->
+
+    <section class="info-box">
+
+        <h2>📌 Assignment Objectives</h2>
+
+        <ul>
+
+            <li>✔ Implement Logging Interceptor</li>
+
+            <li>✔ Implement Global Error Interceptor</li>
+
+            <li>✔ Demonstrate HTTP GET Requests</li>
+
+            <li>✔ Handle HTTP Errors (400,401,403,404,500)</li>
+
+            <li>✔ Retry Failed Requests</li>
+
+            <li>✔ Display Angular Learning Topics</li>
+
+        </ul>
+
+    </section>
+
+    <!-- Topic Cards -->
+
+    <div class="cards">
+
+        <div class="card" *ngFor="let post of posts">
+
+            <div class="card-header">
+
+                <span class="icon">📘</span>
+
+                <h2>{{post.title}}</h2>
+
+            </div>
+
+            <p>
+
+                {{post.body}}
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <hr>
+
+        <p>
+
+            Built with ❤️ using Angular Standalone Components,
+            HttpClient, RxJS and HTTP Interceptors.
+
+        </p>
+
+    </footer>
+
+</div>
