@@ -1,0 +1,48 @@
+<div class="counter-card">
+
+    <h2>Angular Signals Counter</h2>
+
+    <div class="display">
+
+        <div class="box">
+            <h3>Count</h3>
+            <p>{{count()}}</p>
+        </div>
+
+        <div class="box">
+            <h3>Double</h3>
+            <p>{{double()}}</p>
+        </div>
+
+        <div class="box">
+            <h3>Square</h3>
+            <p>{{square()}}</p>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="plus"
+            (click)="increment()">
+            +1
+        </button>
+
+        <button class="minus"
+            (click)="decrement()">
+            -1
+        </button>
+
+        <button class="add"
+            (click)="addFive()">
+            +5
+        </button>
+
+        <button class="reset"
+            (click)="reset()">
+            Reset
+        </button>
+
+    </div>
+
+</div>

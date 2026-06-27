@@ -1,0 +1,50 @@
+<div class="cart-container">
+
+    <h2>
+        Shopping Cart
+        <span class="badge">{{itemCount}}</span>
+    </h2>
+
+    <div *ngIf="cartItems.length==0" class="empty">
+
+        Cart is Empty
+
+    </div>
+
+    <div *ngFor="let item of cartItems" class="cart-card">
+
+        <div>
+
+            <h3>{{item.name}}</h3>
+
+            <p>₹ {{item.price}}</p>
+
+            <p>Quantity : {{item.quantity}}</p>
+
+        </div>
+
+        <div class="actions">
+
+            <button (click)="decrease(item.id)">-</button>
+
+            <button (click)="increase(item.id)">+</button>
+
+            <button (click)="remove(item.id)">Remove</button>
+
+        </div>
+
+    </div>
+
+    <div *ngIf="cartItems.length>0" class="summary">
+
+        <h3>Total : ₹ {{total}}</h3>
+
+        <button class="clear" (click)="clear()">
+
+            Clear Cart
+
+        </button>
+
+    </div>
+
+</div>
